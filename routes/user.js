@@ -15,7 +15,7 @@ router.post("/", function (req, res) {
 
   QuabblyUser.create(
     {
-      userName: req.body.email,
+      email: req.body.email,
       password: req.body.password,
     },
     (err, newUser) => {
